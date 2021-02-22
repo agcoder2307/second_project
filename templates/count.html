@@ -1,0 +1,12 @@
+<h1>COUNTED: There are {{counted}} words in your text</h1>
+<a href="{% url 'home' %}">Start Again</a>
+<br/>
+<h1>YOUR TEXT:</h1>
+<h2>{{fulltext}}</h2>
+
+<h1> Cool Feature!</h1>
+{% for word, counts in sortedwords %}
+<h2>{{word}} : {{counts}}</h2>
+<br/>
+
+{%endfor%}  
